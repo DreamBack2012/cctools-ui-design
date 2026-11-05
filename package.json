@@ -1,0 +1,24 @@
+{
+  "name": "cctools-ui-design",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CCTools 设备工作区与批量任务交互原型",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/core.test.mjs",
+    "check": "node --check server.mjs && node --check src/app.js && node --check src/ui.js && node --check src/core/store.js && node --check src/core/tasks.js && node --check src/views/workspace.js && node --check src/views/operations.js && node --check src/views/pages.js && node --check src/core/catalog.js && node --check src/core/workbook.js && node --check src/core/factory-profile.js && node --check script/build-pages.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "lint": "eslint src tests script server.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.14.0",
+    "globals": "17.14.0",
+    "playwright": "1.58.2",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

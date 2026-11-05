@@ -1,0 +1,17 @@
+{
+  "format": "cctools-prototype-config",
+  "version": 1,
+  "model": "CT15",
+  "parameters": [
+    {
+      "key": "sntpAddr",
+      "label": "时间服务器地址",
+      "value": "time.example.org"
+    },
+    {
+      "key": "gateway",
+      "label": "网关地址",
+      "value": "192.0.2.1"
+    }
+  ]
+}

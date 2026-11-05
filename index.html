@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173d36">
+  <title>CCTools · 设备工作台</title>
+  <link rel="icon" href="./src/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <nav class="preview-toolbar" aria-label="原型版本预览"><span>原型预览</span><div><a data-preview-edition="internal" href="?edition=internal">内测版</a><a data-preview-edition="release" href="?edition=release">发行版</a><a data-preview-edition="factory" href="?edition=factory">工厂版</a></div></nav>
+  <div id="app"></div>
+  <div id="overlay-root"></div>
+  <div id="toast-root" role="status" aria-live="polite"></div>
+  <script src="./third_party/sheetjs/xlsx.full.min.js"></script>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
